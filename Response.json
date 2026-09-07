@@ -1,0 +1,33 @@
+﻿[
+  {
+    "Memo": "直接アクセス時の応答",
+    "URL": "/",
+    "Values": "<html lang=\"ja\"><head><meta charset=\"utf-8\"></head><body><h1>404 Not Found</h1><p>URLが誤っています</p></body></html>",
+    "Type": "ANY",
+    "Status": "404",
+    "Enc": "UTF-8",
+    "WaitTime": "100",
+    "ContentType": "text/html"
+  },
+  {
+    "Memo": "DLL応答のサンプル",
+    "URL": "/Dllsample",
+    "Values": ".\\plugin\\DRS_DLL_Sample.dll@DRS_DLL_Sample.SampleClass",
+    "Type": "ANY",
+    "Status": "200",
+    "Enc": "UTF-8",
+    "WaitTime": "5",
+    "ContentType": "application/json"
+  },
+  {
+    "URL": "/bodyCheck",
+    "Values": "bodyCheck",
+    "Type": "ANY",
+    "Status": "200",
+    "Enc": "SJIS",
+    "WaitTime": "5",
+    "ContentType": "text/plain",
+    "Memo": "Bodyの内容が一致した場合応答を返すサンプル",
+    "CheckBody": "id=1234,pass=5678"
+  }
+]
